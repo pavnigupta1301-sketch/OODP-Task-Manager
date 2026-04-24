@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Task Manager</h1>
+            <p>Manage your tasks beautifully.</p>
+        </header>
+
+        <section class="add-task-section">
+            <form id="taskForm">
+                <input type="text" id="taskTitle" placeholder="Task Title" required>
+                <textarea id="taskDescription" placeholder="Task Description" required></textarea>
+                <button type="submit" id="addBtn">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-list-section">
+            <h2>Your Tasks</h2>
+            <div id="taskList" class="task-list">
+                <!-- Tasks will be injected here via Javascript -->
+            </div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
